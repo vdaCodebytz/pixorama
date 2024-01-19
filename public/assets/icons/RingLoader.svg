@@ -1,0 +1,8 @@
+<svg width="123" height="123" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="61" cy="62" r="55.5" stroke="#737373" stroke-opacity="0.81" stroke-width="11"/>
+<mask id="path-2-outside-1_12_8" maskUnits="userSpaceOnUse" x="61" y="0" width="62" height="62" fill="black">
+<rect fill="white" x="61" width="62" height="62"/>
+<path d="M61 12V12C88.6142 12 111 34.3858 111 62V62H61V12Z"/>
+</mask>
+<path d="M61 0C95.2417 0 123 27.7583 123 62H99C99 41.0132 81.9868 24 61 24V0ZM111 62H61H111ZM61 62V12V62ZM61 0C95.2417 0 123 27.7583 123 62H99C99 41.0132 81.9868 24 61 24V0Z" fill="white" mask="url(#path-2-outside-1_12_8)"/>
+</svg>
