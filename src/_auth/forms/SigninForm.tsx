@@ -17,10 +17,12 @@ import Loader from "@/components/shared/Loader";
 import { Link, useNavigate } from "react-router-dom";
 import { useToast } from "@/components/ui/use-toast";
 import { useSignIn } from "@/lib/react-query/mutations";
+import { useAuthContext } from "@/context/AuthContext";
 
 const SigninForm = () => {
   const { toast } = useToast();
   const navigate = useNavigate();
+  const { setIsAuthenticated } = useAuthContext();
 
   const { mutateAsync: signIn, isPending: isSigningIn } = useSignIn();
 
@@ -39,7 +41,7 @@ const SigninForm = () => {
       if (!session) {
         throw new Error("Something went wrong");
       }
-
+      setIsAuthenticated(true);
       navigate("/");
     } catch (error: any) {
       toast({

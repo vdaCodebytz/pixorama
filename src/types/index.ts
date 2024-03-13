@@ -1,3 +1,5 @@
+import { Models } from "appwrite";
+
 export interface INewUser {
   name: string;
   username: string;
@@ -66,4 +68,14 @@ export type IUpdatePost = {
   file: File[];
   location?: string;
   tags?: string;
+};
+
+export type FileUploaderProps = {
+  fieldChange: (file: File[]) => void;
+  mediaUrl: string;
+};
+
+export type PostFormProps = {
+  post?: Models.Document;
+  action: "Create" | "Update";
 };

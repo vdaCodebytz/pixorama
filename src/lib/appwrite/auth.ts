@@ -1,4 +1,4 @@
-import { INewUser, INewUserDB } from "@/types";
+import { INewPost, INewUser, INewUserDB } from "@/types";
 import {
   ID,
   Query,
@@ -56,7 +56,7 @@ export const signIn = async (user: { email: string; password: string }) => {
     const session = await account.createEmailSession(user.email, user.password);
     return session;
   } catch (error) {
-    return { status: "error", message: error };
+    console.log(error);
   }
 };
 
@@ -83,6 +83,8 @@ export const getCurrentUser = async () => {
 export const signOut = async () => {
   try {
     const session = await account.deleteSession("current");
+    console.log(session);
+
     return session;
   } catch (error) {
     console.log(error);
