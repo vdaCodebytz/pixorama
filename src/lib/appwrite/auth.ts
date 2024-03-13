@@ -1,4 +1,4 @@
-import { INewPost, INewUser, INewUserDB } from "@/types";
+import { INewUser, INewUserDB } from "@/types";
 import {
   ID,
   Query,
