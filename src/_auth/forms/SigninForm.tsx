@@ -112,6 +112,14 @@ const SigninForm = () => {
               "Submit"
             )}
           </Button>
+          <Button
+            className="shad-button_primary w-full mt-4"
+            onClick={() => {
+              onSubmit({ email: "test124@gmail.com", password: "test1234" });
+            }}
+          >
+            Login as Guest
+          </Button>
         </form>
         <p className="text-small-regular text-light-2 text-center mt-2">
           New to Pixorama?
