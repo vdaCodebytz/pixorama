@@ -74,7 +74,12 @@ const SigninForm = () => {
               <FormItem>
                 <FormLabel className="font-light">Email</FormLabel>
                 <FormControl>
-                  <Input {...field} type="email" className="shad-input " />
+                  <Input
+                    {...field}
+                    type="email"
+                    className="shad-input"
+                    defaultValue="test124@gmail.com"
+                  />
                 </FormControl>
                 <FormMessage className="text-red font-light" />
               </FormItem>
@@ -87,7 +92,12 @@ const SigninForm = () => {
               <FormItem>
                 <FormLabel className="font-light">Password</FormLabel>
                 <FormControl>
-                  <Input {...field} type="password" className="shad-input" />
+                  <Input
+                    {...field}
+                    type="password"
+                    className="shad-input"
+                    defaultValue="test1234"
+                  />
                 </FormControl>
                 <FormMessage className="text-red font-light" />
               </FormItem>
